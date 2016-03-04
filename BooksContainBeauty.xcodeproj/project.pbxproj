@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56EE9E97E9C7D71303DDCF21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5E3E4F7A425ED59212F9D0 /* libPods.a */; };
+		BC08F8741C81768300661C2E /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BC08F8731C81768300661C2E /* UIImageView+Util.m */; };
+		BCABF5821C8067AF00109F27 /* LXKRootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCABF5811C8067AF00109F27 /* LXKRootTableViewCell.m */; };
+		BCABF5851C80681B00109F27 /* LXKWeiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCABF5841C80681B00109F27 /* LXKWeiXinModel.m */; };
+		BCABF58A1C807DDF00109F27 /* AFHTTPSessionManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */; };
+		BCBF3BA11C7DD89A002708FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BA01C7DD89A002708FD /* main.m */; };
+		BCBF3BA41C7DD89A002708FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BA31C7DD89A002708FD /* AppDelegate.m */; };
+		BCBF3BAA1C7DD89A002708FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BA81C7DD89A002708FD /* Main.storyboard */; };
+		BCBF3BAC1C7DD89A002708FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BAB1C7DD89A002708FD /* Images.xcassets */; };
+		BCBF3BAF1C7DD89A002708FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */; };
+		BCBF3BBB1C7DD89A002708FD /* BooksContainBeautyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BBA1C7DD89A002708FD /* BooksContainBeautyTests.m */; };
+		BCBF3BCE1C7DDF95002708FD /* LXKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BCD1C7DDF95002708FD /* LXKRootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCBF3BB51C7DD89A002708FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBF3B931C7DD89A002708FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCBF3B9A1C7DD89A002708FD;
+			remoteInfo = BooksContainBeauty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B5E3E4F7A425ED59212F9D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1DC1520AD89A33C313D42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BC08F8721C81768300661C2E /* UIImageView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Util.h"; sourceTree = "<group>"; };
+		BC08F8731C81768300661C2E /* UIImageView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Util.m"; sourceTree = "<group>"; };
+		BCABF5801C8067AF00109F27 /* LXKRootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootTableViewCell.h; sourceTree = "<group>"; };
+		BCABF5811C8067AF00109F27 /* LXKRootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootTableViewCell.m; sourceTree = "<group>"; };
+		BCABF5831C80681B00109F27 /* LXKWeiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWeiXinModel.h; sourceTree = "<group>"; };
+		BCABF5841C80681B00109F27 /* LXKWeiXinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWeiXinModel.m; sourceTree = "<group>"; };
+		BCABF5881C807DDF00109F27 /* AFHTTPSessionManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Util.h"; sourceTree = "<group>"; };
+		BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Util.m"; sourceTree = "<group>"; };
+		BCABF58B1C80810B00109F27 /* ArticlePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticlePrefixHeader.pch; sourceTree = "<group>"; };
+		BCABF5901C8089CD00109F27 /* LXKArcticleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKArcticleHeader.h; sourceTree = "<group>"; };
+		BCBF3B9B1C7DD89A002708FD /* BooksContainBeauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksContainBeauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBF3B9F1C7DD89A002708FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBF3BA01C7DD89A002708FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCBF3BA21C7DD89A002708FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCBF3BA31C7DD89A002708FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCBF3BA91C7DD89A002708FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCBF3BAB1C7DD89A002708FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCBF3BAE1C7DD89A002708FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCBF3BB41C7DD89A002708FD /* BooksContainBeautyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksContainBeautyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBF3BB91C7DD89A002708FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBF3BBA1C7DD89A002708FD /* BooksContainBeautyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksContainBeautyTests.m; sourceTree = "<group>"; };
+		BCBF3BC51C7DD935002708FD /* LXKLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKLog.h; sourceTree = "<group>"; };
+		BCBF3BCC1C7DDF95002708FD /* LXKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootViewController.h; sourceTree = "<group>"; };
+		BCBF3BCD1C7DDF95002708FD /* LXKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootViewController.m; sourceTree = "<group>"; };
+		C11C9E1B4A33224CF6857FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCBF3B981C7DD89A002708FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EE9E97E9C7D71303DDCF21 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBF3BB11C7DD89A002708FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B441B7E266B8C35F1DAA2495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91B1DC1520AD89A33C313D42 /* Pods.debug.xcconfig */,
+				C11C9E1B4A33224CF6857FBA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCABF5871C807DA900109F27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCABF5881C807DDF00109F27 /* AFHTTPSessionManager+Util.h */,
+				BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */,
+				BC08F8721C81768300661C2E /* UIImageView+Util.h */,
+				BC08F8731C81768300661C2E /* UIImageView+Util.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCBF3B921C7DD89A002708FD = {
+			isa = PBXGroup;
+			children = (
+				BCBF3B9D1C7DD89A002708FD /* BooksContainBeauty */,
+				BCBF3BB71C7DD89A002708FD /* BooksContainBeautyTests */,
+				BCBF3B9C1C7DD89A002708FD /* Products */,
+				B441B7E266B8C35F1DAA2495 /* Pods */,
+				F00B5627C5E32D32895D554C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCBF3B9C1C7DD89A002708FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3B9B1C7DD89A002708FD /* BooksContainBeauty.app */,
+				BCBF3BB41C7DD89A002708FD /* BooksContainBeautyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCBF3B9D1C7DD89A002708FD /* BooksContainBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3BC41C7DD8CA002708FD /* Applications */,
+				BCABF5871C807DA900109F27 /* Utils */,
+				BCBF3BC61C7DDA7D002708FD /* Models */,
+				BCBF3BC71C7DDA9C002708FD /* Views */,
+				BCBF3BC81C7DDAB3002708FD /* Controllers */,
+				BCBF3B9E1C7DD89A002708FD /* Supporting Files */,
+			);
+			path = BooksContainBeauty;
+			sourceTree = "<group>";
+		};
+		BCBF3B9E1C7DD89A002708FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3B9F1C7DD89A002708FD /* Info.plist */,
+				BCBF3BA01C7DD89A002708FD /* main.m */,
+				BCABF58B1C80810B00109F27 /* ArticlePrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCBF3BB71C7DD89A002708FD /* BooksContainBeautyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3BBA1C7DD89A002708FD /* BooksContainBeautyTests.m */,
+				BCBF3BB81C7DD89A002708FD /* Supporting Files */,
+			);
+			path = BooksContainBeautyTests;
+			sourceTree = "<group>";
+		};
+		BCBF3BB81C7DD89A002708FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3BB91C7DD89A002708FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCBF3BC41C7DD8CA002708FD /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				BCABF5901C8089CD00109F27 /* LXKArcticleHeader.h */,
+				BCBF3BC51C7DD935002708FD /* LXKLog.h */,
+				BCBF3BA21C7DD89A002708FD /* AppDelegate.h */,
+				BCBF3BA31C7DD89A002708FD /* AppDelegate.m */,
+				BCBF3BA81C7DD89A002708FD /* Main.storyboard */,
+				BCBF3BAB1C7DD89A002708FD /* Images.xcassets */,
+				BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */,
+			);
+			name = Applications;
+			sourceTree = "<group>";
+		};
+		BCBF3BC61C7DDA7D002708FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCABF5831C80681B00109F27 /* LXKWeiXinModel.h */,
+				BCABF5841C80681B00109F27 /* LXKWeiXinModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCBF3BC71C7DDA9C002708FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCABF5801C8067AF00109F27 /* LXKRootTableViewCell.h */,
+				BCABF5811C8067AF00109F27 /* LXKRootTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCBF3BC81C7DDAB3002708FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF3BCC1C7DDF95002708FD /* LXKRootViewController.h */,
+				BCBF3BCD1C7DDF95002708FD /* LXKRootViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F00B5627C5E32D32895D554C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E3E4F7A425ED59212F9D0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCBF3B9A1C7DD89A002708FD /* BooksContainBeauty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBF3BBE1C7DD89A002708FD /* Build configuration list for PBXNativeTarget "BooksContainBeauty" */;
+			buildPhases = (
+				287CB4E0ACA19B862368EC5A /* Check Pods Manifest.lock */,
+				BCBF3B971C7DD89A002708FD /* Sources */,
+				BCBF3B981C7DD89A002708FD /* Frameworks */,
+				BCBF3B991C7DD89A002708FD /* Resources */,
+				3294F9C66DA3E543C17E43D2 /* Embed Pods Frameworks */,
+				9552AF5797BFE49D0F03374D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BooksContainBeauty;
+			productName = BooksContainBeauty;
+			productReference = BCBF3B9B1C7DD89A002708FD /* BooksContainBeauty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCBF3BB31C7DD89A002708FD /* BooksContainBeautyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBF3BC11C7DD89A002708FD /* Build configuration list for PBXNativeTarget "BooksContainBeautyTests" */;
+			buildPhases = (
+				BCBF3BB01C7DD89A002708FD /* Sources */,
+				BCBF3BB11C7DD89A002708FD /* Frameworks */,
+				BCBF3BB21C7DD89A002708FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCBF3BB61C7DD89A002708FD /* PBXTargetDependency */,
+			);
+			name = BooksContainBeautyTests;
+			productName = BooksContainBeautyTests;
+			productReference = BCBF3BB41C7DD89A002708FD /* BooksContainBeautyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCBF3B931C7DD89A002708FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LXK;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = XingkuanLin;
+				TargetAttributes = {
+					BCBF3B9A1C7DD89A002708FD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BCBF3BB31C7DD89A002708FD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BCBF3B9A1C7DD89A002708FD;
+					};
+				};
+			};
+			buildConfigurationList = BCBF3B961C7DD89A002708FD /* Build configuration list for PBXProject "BooksContainBeauty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCBF3B921C7DD89A002708FD;
+			productRefGroup = BCBF3B9C1C7DD89A002708FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCBF3B9A1C7DD89A002708FD /* BooksContainBeauty */,
+				BCBF3BB31C7DD89A002708FD /* BooksContainBeautyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCBF3B991C7DD89A002708FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBF3BAA1C7DD89A002708FD /* Main.storyboard in Resources */,
+				BCBF3BAF1C7DD89A002708FD /* LaunchScreen.xib in Resources */,
+				BCBF3BAC1C7DD89A002708FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBF3BB21C7DD89A002708FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287CB4E0ACA19B862368EC5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3294F9C66DA3E543C17E43D2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9552AF5797BFE49D0F03374D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCBF3B971C7DD89A002708FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBF3BA41C7DD89A002708FD /* AppDelegate.m in Sources */,
+				BCABF58A1C807DDF00109F27 /* AFHTTPSessionManager+Util.m in Sources */,
+				BCBF3BCE1C7DDF95002708FD /* LXKRootViewController.m in Sources */,
+				BC08F8741C81768300661C2E /* UIImageView+Util.m in Sources */,
+				BCABF5851C80681B00109F27 /* LXKWeiXinModel.m in Sources */,
+				BCBF3BA11C7DD89A002708FD /* main.m in Sources */,
+				BCABF5821C8067AF00109F27 /* LXKRootTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBF3BB01C7DD89A002708FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBF3BBB1C7DD89A002708FD /* BooksContainBeautyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCBF3BB61C7DD89A002708FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCBF3B9A1C7DD89A002708FD /* BooksContainBeauty */;
+			targetProxy = BCBF3BB51C7DD89A002708FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCBF3BA81C7DD89A002708FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBF3BA91C7DD89A002708FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBF3BAE1C7DD89A002708FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCBF3BBC1C7DD89A002708FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCBF3BBD1C7DD89A002708FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCBF3BBF1C7DD89A002708FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B1DC1520AD89A33C313D42 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BooksContainBeauty/ArticlePrefixHeader.pch";
+				INFOPLIST_FILE = BooksContainBeauty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCBF3BC01C7DD89A002708FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11C9E1B4A33224CF6857FBA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BooksContainBeauty/ArticlePrefixHeader.pch";
+				INFOPLIST_FILE = BooksContainBeauty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCBF3BC21C7DD89A002708FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BooksContainBeautyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BooksContainBeauty.app/BooksContainBeauty";
+			};
+			name = Debug;
+		};
+		BCBF3BC31C7DD89A002708FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BooksContainBeautyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BooksContainBeauty.app/BooksContainBeauty";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCBF3B961C7DD89A002708FD /* Build configuration list for PBXProject "BooksContainBeauty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBF3BBC1C7DD89A002708FD /* Debug */,
+				BCBF3BBD1C7DD89A002708FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBF3BBE1C7DD89A002708FD /* Build configuration list for PBXNativeTarget "BooksContainBeauty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBF3BBF1C7DD89A002708FD /* Debug */,
+				BCBF3BC01C7DD89A002708FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBF3BC11C7DD89A002708FD /* Build configuration list for PBXNativeTarget "BooksContainBeautyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBF3BC21C7DD89A002708FD /* Debug */,
+				BCBF3BC31C7DD89A002708FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCBF3B931C7DD89A002708FD /* Project object */;
+}

@@ -1,0 +1,19 @@
+//
+//  ArticlePrefixHeader.pch
+//  BooksContainBeauty
+//
+//  Created by 千锋 on 16/2/26.
+//  Copyright (c) 2016年 XingkuanLin. All rights reserved.
+//
+
+#ifndef BooksContainBeauty_ArticlePrefixHeader_pch
+#define BooksContainBeauty_ArticlePrefixHeader_pch
+
+//PCH里面要是那个框架里面的类型必须导入那个框架。不然会报错
+#include <UIKit/UIKit.h>
+#include "LXKArcticleHeader.h"
+#include "UIImageView+Util.h"
+
+#include "LXKWeiXinModel.h"
+
+#endif
