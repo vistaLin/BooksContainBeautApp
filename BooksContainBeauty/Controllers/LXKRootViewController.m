@@ -12,8 +12,14 @@
 #import "LXKWeiXinModel.h"
 #import "AFHTTPSessionManager+Util.h"
 #import "LXKRootTableViewCell.h"
+#import "LXKWeiXinFrameModel.h"
+#import "LXKWebViewController.h"
+#import "HACursor.h"
 
 @interface LXKRootViewController () <UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, copy) NSArray *titlesArray;
+@property (nonatomic, copy) NSMutableArray *pageMulViewsArray;
 
 @end
 
@@ -29,20 +35,71 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self createTableView];
+   
+    [self addCursorView];
+}
+
+#pragma mark -- addCursorView
+- (void)addCursorView
+{
+    self.title = @"颜如玉云";
+    UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+    view.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:view];
+    
+    _titlesArray = @[@"微文",@"国内",@"国际",@"时事",@"旅行",@"趣闻"];
+   
+    HACursor *cursor = [[HACursor alloc] init];
+   
+    cursor.frame = CGRectMake(0, 64, WIDTH, 45);
+    cursor.titles = self.titlesArray;
+    cursor.pageViews = [self createPageView];
+    cursor.rootScrollViewHeight = HEIGHT - 109;
+    
+    cursor.titleNormalColor = [UIColor whiteColor];
+    cursor.titleSelectedColor = [UIColor redColor];
+    cursor.showSortbutton = NO;
+    cursor.backgroundColor = [UIColor greenColor];
+//    cursor.minFontSize = 10.0;
+//    cursor.maxFontSize = 30.0;
+    cursor.isGraduallyChangFont = NO;
+    cursor.isGraduallyChangColor = YES;
+    [self.view addSubview:cursor];
+}
+
+- (NSMutableArray *)createPageView {
+    if (!_pageMulViewsArray) {
+        _pageMulViewsArray = [NSMutableArray new];
+    }
+            for (int i = 0; i < _titlesArray.count; i++) {
+                if (i == 0) {
+                    [self createTableView];
+                    [_pageMulViewsArray addObject:_tableView];
+        } else {
+            UIView  *view = [UIView new];
+            view.backgroundColor = [UIColor redColor];
+            [_pageMulViewsArray addObject:view];
+        }
+    }
+    return _pageMulViewsArray;
 }
 
 #pragma mark - createView
 
 - (void) createTableView {
     
-    self.title = @"颜如玉云";
-    
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    [self.view addSubview:_tableView];
+//    UIView *homeView = [UIView new];
+//    homeView.backgroundColor = [UIColor redColor];
+//  
+//    [_pageMulViewsArray addObject:homeView];
+  //  [_pageMulViewsArray addObject:_tableView];
+  //  [self.view addSubview:_tableView];
+   
+   
     
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self loadDataModel:YES];
@@ -74,7 +131,8 @@
                   _dataArray = [NSMutableArray array];
               }
               for (NSDictionary *objDict in responseObejct[@"newslist"]) {
-                  LXKWeiXinModel *model = [LXKWeiXinModel yy_modelWithDictionary:objDict];
+                  LXKWeiXinFrameModel *model = [LXKWeiXinFrameModel new];
+                  model.model = [LXKWeiXinModel yy_modelWithDictionary:objDict];
                   [_dataArray addObject:model];
               }
               // 必须要在解析数据成功后就刷新视图 否侧集合视图的委托方法都不会回调   因为单元格复用才调用协议的回调方法
@@ -117,18 +175,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    LXKRootTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"CELL"];
-    if (!cell) {
-        cell = [[LXKRootTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CELL"];
-    }
-   
-    LXKWeiXinModel *model = _dataArray[indexPath.row];
-    cell.model = model;
+//    LXKRootTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"CELL"];
+//    if (!cell) {
+//        cell = [[LXKRootTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CELL"];
+//    }
+    LXKRootTableViewCell *cell = [LXKRootTableViewCell cellInTableView:tableView forIndexPath:indexPath];
+    cell.frameModel = _dataArray[indexPath.row];
     return cell;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 400;
+    LXKWeiXinFrameModel *frameModel = _dataArray[indexPath.row];
+    return frameModel.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LXKWebViewController *webVC = [[LXKWebViewController alloc] init];
+    LXKWeiXinFrameModel *model = _dataArray[indexPath.row];
+    webVC.url = model.model.url;
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 @end

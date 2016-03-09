@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class LXKWeiXinFrameModel;
 
 @interface LXKRootTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) LXKWeiXinModel *model;
+@property (nonatomic, strong) LXKWeiXinFrameModel *frameModel;
+
++ (LXKRootTableViewCell *)cellInTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath;
 
 @end

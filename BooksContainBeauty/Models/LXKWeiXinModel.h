@@ -13,12 +13,12 @@
 /**文章的来源*/
 @property (nonatomic, copy) NSString *desc;
 /**更新的时间*/
-@property (nonatomic, copy) NSString *hottime;
-/**图片的URL*/
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *ctime;
 /**文章的标题*/
-@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *title;
 /**查看详情的URL*/
+@property (nonatomic, copy) NSString *url;
+/**图片的URL*/
 @property (nonatomic, copy) NSString *picUrl;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "LXKRootTableViewCell.h"
+#import "LXKWeiXinFrameModel.h"
 
 @implementation LXKRootTableViewCell {
     UIImageView *_imageView;
@@ -14,36 +15,70 @@
     UILabel *_timeLabel;
 }
 
++ (LXKRootTableViewCell *)cellInTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath
+{
+    // 不能添加常量const
+    static NSString *CellID = @"CellID";
+    LXKRootTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    if (!cell) {
+        cell = [[LXKRootTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
+    }
+    return cell;
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        // 必须要创建了才有值 为什么这个值不对啊？
-        CGFloat w = self.frame.size.width;
-        NSLog(@"w  = %lf",w);
-        CGFloat h = self.frame.size.height;
-        NSLog(@"h = %lf",h);
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5,w - 10, h - 10)];
+        _imageView = [UIImageView new];
         [self.contentView addSubview:_imageView];
         
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, h * 7 / 10, w, h / 10)];
+        _timeLabel = [UILabel new];
+        // 请不要那么愚蠢 记得在设置大小并且在frame哪里计算也需要设置
+        _timeLabel.font = FONT_TIME;
+        [self.contentView addSubview:_timeLabel];
+        
+        _titleLabel = [UILabel new];
+        _titleLabel.font = FONT_TITLE;
+        _titleLabel.numberOfLines = 0;
         [self.contentView addSubview:_titleLabel];
+//        // 必须要创建了才有值 为什么这个值不对啊？
+//        CGFloat w = self.frame.size.width;
+//        NSLog(@"w  = %lf",w);
+//        CGFloat h = self.frame.size.height;
+//        NSLog(@"h = %lf",h);
+//        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5,w - 10, h - 10)];
+//        [self.contentView addSubview:_imageView];
+//        
+//        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, h * 7 / 10, w, h / 10)];
+//        [self.contentView addSubview:_titleLabel];
     }
     return self;
 }
 
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//
-//   
-//}
-
-- (void)setModel:(LXKWeiXinModel *)model
+- (void)setFrameModel:(LXKWeiXinFrameModel *)frameModel
 {
-    _model = model;
-    [_imageView loadImageWithUrlString:_model.picUrl];
+    _frameModel = frameModel;
+    _imageView.frame = frameModel.imageViewFrame;
+    [_imageView loadImageWithUrlString:frameModel.model.picUrl];
     
-    _titleLabel.text = _model.title;
+    _titleLabel.frame = frameModel.titleLabelFrame;
+    _titleLabel.text = frameModel.model.title;
+    
+    _timeLabel.frame = frameModel.hottimeAndDescLabelFrame;
+    if (frameModel.model.ctime && frameModel.model.desc) {
+        _timeLabel.text = [NSString stringWithFormat:@"%@   %@",frameModel.model.desc,frameModel.model.ctime];
+    }else if (!frameModel.model.ctime ){
+        _timeLabel.text = frameModel.model.desc;
+    }else {
+    }
 }
+
+//- (void)setFrame:(CGRect)frame
+//{
+//    frame.origin.y += 5;
+//    frame.size.height -= 5;
+//    [super setFrame:frame];
+//}
 
 - (void)awakeFromNib {
     // Initialization code

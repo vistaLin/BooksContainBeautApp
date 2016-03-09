@@ -27,7 +27,7 @@ PODS:
   - YYModel (0.9.12)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.6.3)
+  - AFNetworking
   - MJRefresh
   - SDWebImage
   - YYModel
