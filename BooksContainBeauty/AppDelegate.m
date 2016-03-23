@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "LXKRootViewController.h"
+//#import "LXKRootViewController.h"
+//#import "LXKLeftVC.h"
+//#import <RESideMenu.h>
+#import "LXKMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,17 +20,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
+    [self createSideMenu];
+     return YES;
+}
+
+- (void)createSideMenu
+{
+    LXKMainTabBarController *tabBarVC = [LXKMainTabBarController new];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    LXKRootViewController *rootVC = [[LXKRootViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    self.window.rootViewController = nav;
-    
-    return YES;
+   
+    self.window.rootViewController = tabBarVC;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

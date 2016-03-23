@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class LXKWeiXinModel;
+@class LXKReadingBooksModel;
+
 @interface LXKWebViewController : UIViewController
 
-@property (nonatomic, copy) NSString *url;
+@property (nonatomic, strong) LXKWeiXinModel *model;
+
+@property (nonatomic, strong) LXKReadingBooksModel *bookModel;
 
 @property (nonatomic, strong) UIWebView *webView;
+
+@property (nonatomic, strong) UIButton *button;
 
 @end

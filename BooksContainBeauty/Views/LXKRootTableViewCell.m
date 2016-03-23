@@ -60,34 +60,23 @@
     _frameModel = frameModel;
     _imageView.frame = frameModel.imageViewFrame;
     [_imageView loadImageWithUrlString:frameModel.model.picUrl];
+
     
     _titleLabel.frame = frameModel.titleLabelFrame;
     _titleLabel.text = frameModel.model.title;
     
     _timeLabel.frame = frameModel.hottimeAndDescLabelFrame;
-    if (frameModel.model.ctime && frameModel.model.desc) {
+    if (frameModel.model.ctime) {
         _timeLabel.text = [NSString stringWithFormat:@"%@   %@",frameModel.model.desc,frameModel.model.ctime];
     }else if (!frameModel.model.ctime ){
         _timeLabel.text = frameModel.model.desc;
-    }else {
     }
 }
 
-//- (void)setFrame:(CGRect)frame
-//{
-//    frame.origin.y += 5;
-//    frame.size.height -= 5;
-//    [super setFrame:frame];
-//}
-
-- (void)awakeFromNib {
-    // Initialization code
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

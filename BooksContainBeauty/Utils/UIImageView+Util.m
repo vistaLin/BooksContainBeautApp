@@ -13,7 +13,7 @@
 
 - (void)loadImageWithUrlString:(NSString *)urlStr
 {
-    [self sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"placeholderImage"]];
+    [self sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"placeHolderImage"]];
 }
 
 @end

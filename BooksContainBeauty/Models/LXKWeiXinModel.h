@@ -10,10 +10,14 @@
 
 @interface LXKWeiXinModel : NSObject
 
-/**文章的来源*/
+/**文章的描述*/
 @property (nonatomic, copy) NSString *desc;
 /**更新的时间*/
+
 @property (nonatomic, copy) NSString *ctime;
+
+@property (nonatomic, copy) NSString *hottime;
+
 /**文章的标题*/
 @property (nonatomic, copy) NSString *title;
 /**查看详情的URL*/

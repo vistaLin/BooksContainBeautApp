@@ -11,8 +11,14 @@
 
 //PCH里面要是那个框架里面的类型必须导入那个框架。不然会报错
 #include <UIKit/UIKit.h>
+#include <MJRefresh.h>
+#include <YYModel.h>
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+
 #include "LXKArcticleHeader.h"
 #include "UIImageView+Util.h"
+#include "AFHTTPSessionManager+Util.h"
 
 #include "LXKWeiXinModel.h"
 

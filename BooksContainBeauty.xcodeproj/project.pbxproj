@@ -19,19 +19,27 @@
 		191408231C8F015100673B4B /* icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 191408151C8F015100673B4B /* icons.bundle */; };
 		191408241C8F015100673B4B /* UIColor+RGBA.m in Sources */ = {isa = PBXBuildFile; fileRef = 191408171C8F015100673B4B /* UIColor+RGBA.m */; };
 		191408251C8F015100673B4B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 191408191C8F015100673B4B /* UIView+Extension.m */; };
-		19FF77A41C8DD529008ACADD /* LXKWeiXinFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF77A11C8DD529008ACADD /* LXKWeiXinFrameModel.m */; };
-		19FF77A51C8DD529008ACADD /* LXKWeiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF77A31C8DD529008ACADD /* LXKWeiXinModel.m */; };
-		19FF77AB1C8DD534008ACADD /* LXKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF77A81C8DD534008ACADD /* LXKRootViewController.m */; };
-		19FF77AC1C8DD534008ACADD /* LXKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF77AA1C8DD534008ACADD /* LXKWebViewController.m */; };
-		19FF77B01C8DD53B008ACADD /* LXKRootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF77AF1C8DD53B008ACADD /* LXKRootTableViewCell.m */; };
+		193F15EE1C9982C600D57044 /* LXKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15EB1C9982C600D57044 /* LXKRootViewController.m */; };
+		193F15EF1C9982C600D57044 /* LXKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15ED1C9982C600D57044 /* LXKWebViewController.m */; };
+		193F15F21C9982DA00D57044 /* LXKWeiXinFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15F11C9982DA00D57044 /* LXKWeiXinFrameModel.m */; };
+		193F15F51C99830300D57044 /* LXKWeiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15F41C99830300D57044 /* LXKWeiXinModel.m */; };
+		193F15F81C99832300D57044 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15F71C99832300D57044 /* AppDelegate.m */; };
+		193F15FE1C99835800D57044 /* LXKColletedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F15FD1C99835800D57044 /* LXKColletedVC.m */; };
+		193F16011C99837100D57044 /* LXKRootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F16001C99837100D57044 /* LXKRootTableViewCell.m */; };
+		193F16041C9983B300D57044 /* LXKDbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F16031C9983B300D57044 /* LXKDbHelper.m */; };
+		195908351C9FF9B30091579D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 195908341C9FF9B30091579D /* LaunchScreen.xib */; };
+		195908391CA0255E0091579D /* LXKMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195908381CA0255E0091579D /* LXKMainTabBarController.m */; };
+		1978DB3D1CA1939300904875 /* LXKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978DB3C1CA1939300904875 /* LXKVideoViewController.m */; };
+		1978DB401CA193F900904875 /* LXKVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978DB3F1CA193F900904875 /* LXKVideoModel.m */; };
+		197D4FF71C9F98EC00AB459E /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 197D4FF61C9F98EC00AB459E /* UIColor+Util.m */; };
+		19E39C8C1CA22252008F8A13 /* LXKVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E39C8B1CA22252008F8A13 /* LXKVideoTableViewCell.m */; };
+		19E39C8F1CA247B9008F8A13 /* LXKPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E39C8E1CA247B9008F8A13 /* LXKPlayViewController.m */; };
 		56EE9E97E9C7D71303DDCF21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5E3E4F7A425ED59212F9D0 /* libPods.a */; };
 		BC08F8741C81768300661C2E /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BC08F8731C81768300661C2E /* UIImageView+Util.m */; };
 		BCABF58A1C807DDF00109F27 /* AFHTTPSessionManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */; };
 		BCBF3BA11C7DD89A002708FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BA01C7DD89A002708FD /* main.m */; };
-		BCBF3BA41C7DD89A002708FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BA31C7DD89A002708FD /* AppDelegate.m */; };
 		BCBF3BAA1C7DD89A002708FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BA81C7DD89A002708FD /* Main.storyboard */; };
 		BCBF3BAC1C7DD89A002708FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BAB1C7DD89A002708FD /* Images.xcassets */; };
-		BCBF3BAF1C7DD89A002708FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */; };
 		BCBF3BBB1C7DD89A002708FD /* BooksContainBeautyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBF3BBA1C7DD89A002708FD /* BooksContainBeautyTests.m */; };
 /* End PBXBuildFile section */
 
@@ -69,16 +77,37 @@
 		191408171C8F015100673B4B /* UIColor+RGBA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBA.m"; sourceTree = "<group>"; };
 		191408181C8F015100673B4B /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		191408191C8F015100673B4B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		19FF77A01C8DD529008ACADD /* LXKWeiXinFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWeiXinFrameModel.h; sourceTree = "<group>"; };
-		19FF77A11C8DD529008ACADD /* LXKWeiXinFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWeiXinFrameModel.m; sourceTree = "<group>"; };
-		19FF77A21C8DD529008ACADD /* LXKWeiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWeiXinModel.h; sourceTree = "<group>"; };
-		19FF77A31C8DD529008ACADD /* LXKWeiXinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWeiXinModel.m; sourceTree = "<group>"; };
-		19FF77A71C8DD534008ACADD /* LXKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootViewController.h; sourceTree = "<group>"; };
-		19FF77A81C8DD534008ACADD /* LXKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootViewController.m; sourceTree = "<group>"; };
-		19FF77A91C8DD534008ACADD /* LXKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWebViewController.h; sourceTree = "<group>"; };
-		19FF77AA1C8DD534008ACADD /* LXKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWebViewController.m; sourceTree = "<group>"; };
-		19FF77AE1C8DD53B008ACADD /* LXKRootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootTableViewCell.h; sourceTree = "<group>"; };
-		19FF77AF1C8DD53B008ACADD /* LXKRootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootTableViewCell.m; sourceTree = "<group>"; };
+		193F15EA1C9982C600D57044 /* LXKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootViewController.h; sourceTree = "<group>"; };
+		193F15EB1C9982C600D57044 /* LXKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootViewController.m; sourceTree = "<group>"; };
+		193F15EC1C9982C600D57044 /* LXKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWebViewController.h; sourceTree = "<group>"; };
+		193F15ED1C9982C600D57044 /* LXKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWebViewController.m; sourceTree = "<group>"; };
+		193F15F01C9982DA00D57044 /* LXKWeiXinFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWeiXinFrameModel.h; sourceTree = "<group>"; };
+		193F15F11C9982DA00D57044 /* LXKWeiXinFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWeiXinFrameModel.m; sourceTree = "<group>"; };
+		193F15F31C99830300D57044 /* LXKWeiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKWeiXinModel.h; sourceTree = "<group>"; };
+		193F15F41C99830300D57044 /* LXKWeiXinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKWeiXinModel.m; sourceTree = "<group>"; };
+		193F15F61C99832300D57044 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		193F15F71C99832300D57044 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		193F15F91C99833800D57044 /* LXKArcticleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKArcticleHeader.h; sourceTree = "<group>"; };
+		193F15FA1C99833800D57044 /* LXKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKLog.h; sourceTree = "<group>"; };
+		193F15FC1C99835800D57044 /* LXKColletedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKColletedVC.h; sourceTree = "<group>"; };
+		193F15FD1C99835800D57044 /* LXKColletedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKColletedVC.m; sourceTree = "<group>"; };
+		193F15FF1C99837100D57044 /* LXKRootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKRootTableViewCell.h; sourceTree = "<group>"; };
+		193F16001C99837100D57044 /* LXKRootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKRootTableViewCell.m; sourceTree = "<group>"; };
+		193F16021C9983B300D57044 /* LXKDbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKDbHelper.h; sourceTree = "<group>"; };
+		193F16031C9983B300D57044 /* LXKDbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKDbHelper.m; sourceTree = "<group>"; };
+		195908341C9FF9B30091579D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		195908371CA0255E0091579D /* LXKMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKMainTabBarController.h; sourceTree = "<group>"; };
+		195908381CA0255E0091579D /* LXKMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKMainTabBarController.m; sourceTree = "<group>"; };
+		1978DB3B1CA1939300904875 /* LXKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKVideoViewController.h; sourceTree = "<group>"; };
+		1978DB3C1CA1939300904875 /* LXKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKVideoViewController.m; sourceTree = "<group>"; };
+		1978DB3E1CA193F900904875 /* LXKVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKVideoModel.h; sourceTree = "<group>"; };
+		1978DB3F1CA193F900904875 /* LXKVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKVideoModel.m; sourceTree = "<group>"; };
+		197D4FF51C9F98EC00AB459E /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		197D4FF61C9F98EC00AB459E /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		19E39C8A1CA22252008F8A13 /* LXKVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKVideoTableViewCell.h; sourceTree = "<group>"; };
+		19E39C8B1CA22252008F8A13 /* LXKVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKVideoTableViewCell.m; sourceTree = "<group>"; };
+		19E39C8D1CA247B9008F8A13 /* LXKPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKPlayViewController.h; sourceTree = "<group>"; };
+		19E39C8E1CA247B9008F8A13 /* LXKPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXKPlayViewController.m; sourceTree = "<group>"; };
 		3B5E3E4F7A425ED59212F9D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1DC1520AD89A33C313D42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BC08F8721C81768300661C2E /* UIImageView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Util.h"; sourceTree = "<group>"; };
@@ -86,19 +115,14 @@
 		BCABF5881C807DDF00109F27 /* AFHTTPSessionManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Util.h"; sourceTree = "<group>"; };
 		BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Util.m"; sourceTree = "<group>"; };
 		BCABF58B1C80810B00109F27 /* ArticlePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticlePrefixHeader.pch; sourceTree = "<group>"; };
-		BCABF5901C8089CD00109F27 /* LXKArcticleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXKArcticleHeader.h; sourceTree = "<group>"; };
 		BCBF3B9B1C7DD89A002708FD /* BooksContainBeauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksContainBeauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF3B9F1C7DD89A002708FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBF3BA01C7DD89A002708FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BCBF3BA21C7DD89A002708FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BCBF3BA31C7DD89A002708FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BCBF3BA91C7DD89A002708FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCBF3BAB1C7DD89A002708FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BCBF3BAE1C7DD89A002708FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCBF3BB41C7DD89A002708FD /* BooksContainBeautyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksContainBeautyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF3BB91C7DD89A002708FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBF3BBA1C7DD89A002708FD /* BooksContainBeautyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksContainBeautyTests.m; sourceTree = "<group>"; };
-		BCBF3BC51C7DD935002708FD /* LXKLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXKLog.h; sourceTree = "<group>"; };
 		C11C9E1B4A33224CF6857FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,15 +183,44 @@
 			path = HARootScrollView;
 			sourceTree = "<group>";
 		};
-		191408261C8FC94800673B4B /* WinXinVC */ = {
+		191408261C8FC94800673B4B /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
-				19FF77A71C8DD534008ACADD /* LXKRootViewController.h */,
-				19FF77A81C8DD534008ACADD /* LXKRootViewController.m */,
-				19FF77A91C8DD534008ACADD /* LXKWebViewController.h */,
-				19FF77AA1C8DD534008ACADD /* LXKWebViewController.m */,
+				193F15EA1C9982C600D57044 /* LXKRootViewController.h */,
+				193F15EB1C9982C600D57044 /* LXKRootViewController.m */,
+				193F15EC1C9982C600D57044 /* LXKWebViewController.h */,
+				193F15ED1C9982C600D57044 /* LXKWebViewController.m */,
 			);
-			name = WinXinVC;
+			name = RootVC;
+			sourceTree = "<group>";
+		};
+		193F15FB1C99834A00D57044 /* CollectVC */ = {
+			isa = PBXGroup;
+			children = (
+				193F15FC1C99835800D57044 /* LXKColletedVC.h */,
+				193F15FD1C99835800D57044 /* LXKColletedVC.m */,
+			);
+			name = CollectVC;
+			sourceTree = "<group>";
+		};
+		195908361CA025290091579D /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				195908371CA0255E0091579D /* LXKMainTabBarController.h */,
+				195908381CA0255E0091579D /* LXKMainTabBarController.m */,
+			);
+			name = TabBarVC;
+			sourceTree = "<group>";
+		};
+		1978DB3A1CA1935800904875 /* VideoVC */ = {
+			isa = PBXGroup;
+			children = (
+				1978DB3B1CA1939300904875 /* LXKVideoViewController.h */,
+				1978DB3C1CA1939300904875 /* LXKVideoViewController.m */,
+				19E39C8D1CA247B9008F8A13 /* LXKPlayViewController.h */,
+				19E39C8E1CA247B9008F8A13 /* LXKPlayViewController.m */,
+			);
+			name = VideoVC;
 			sourceTree = "<group>";
 		};
 		19C212F41C8ED75200930B22 /* Vendors */ = {
@@ -181,10 +234,12 @@
 		19FF779F1C8DD529008ACADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				19FF77A01C8DD529008ACADD /* LXKWeiXinFrameModel.h */,
-				19FF77A11C8DD529008ACADD /* LXKWeiXinFrameModel.m */,
-				19FF77A21C8DD529008ACADD /* LXKWeiXinModel.h */,
-				19FF77A31C8DD529008ACADD /* LXKWeiXinModel.m */,
+				193F15F31C99830300D57044 /* LXKWeiXinModel.h */,
+				193F15F41C99830300D57044 /* LXKWeiXinModel.m */,
+				193F15F01C9982DA00D57044 /* LXKWeiXinFrameModel.h */,
+				193F15F11C9982DA00D57044 /* LXKWeiXinFrameModel.m */,
+				1978DB3E1CA193F900904875 /* LXKVideoModel.h */,
+				1978DB3F1CA193F900904875 /* LXKVideoModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,7 +247,10 @@
 		19FF77A61C8DD534008ACADD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				191408261C8FC94800673B4B /* WinXinVC */,
+				1978DB3A1CA1935800904875 /* VideoVC */,
+				195908361CA025290091579D /* TabBarVC */,
+				193F15FB1C99834A00D57044 /* CollectVC */,
+				191408261C8FC94800673B4B /* RootVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,8 +258,10 @@
 		19FF77AD1C8DD53B008ACADD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				19FF77AE1C8DD53B008ACADD /* LXKRootTableViewCell.h */,
-				19FF77AF1C8DD53B008ACADD /* LXKRootTableViewCell.m */,
+				193F15FF1C99837100D57044 /* LXKRootTableViewCell.h */,
+				193F16001C99837100D57044 /* LXKRootTableViewCell.m */,
+				19E39C8A1CA22252008F8A13 /* LXKVideoTableViewCell.h */,
+				19E39C8B1CA22252008F8A13 /* LXKVideoTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,8 +290,12 @@
 			children = (
 				BCABF5881C807DDF00109F27 /* AFHTTPSessionManager+Util.h */,
 				BCABF5891C807DDF00109F27 /* AFHTTPSessionManager+Util.m */,
+				197D4FF51C9F98EC00AB459E /* UIColor+Util.h */,
+				197D4FF61C9F98EC00AB459E /* UIColor+Util.m */,
 				BC08F8721C81768300661C2E /* UIImageView+Util.h */,
 				BC08F8731C81768300661C2E /* UIImageView+Util.m */,
+				193F16021C9983B300D57044 /* LXKDbHelper.h */,
+				193F16031C9983B300D57044 /* LXKDbHelper.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,9 +324,9 @@
 			isa = PBXGroup;
 			children = (
 				19C212F41C8ED75200930B22 /* Vendors */,
+				BCABF5871C807DA900109F27 /* Utils */,
 				19FF77B11C8DD65E008ACADD /* MVC */,
 				BCBF3BC41C7DD8CA002708FD /* Applications */,
-				BCABF5871C807DA900109F27 /* Utils */,
 				BCBF3B9E1C7DD89A002708FD /* Supporting Files */,
 			);
 			path = BooksContainBeauty;
@@ -298,13 +362,13 @@
 		BCBF3BC41C7DD8CA002708FD /* Applications */ = {
 			isa = PBXGroup;
 			children = (
-				BCABF5901C8089CD00109F27 /* LXKArcticleHeader.h */,
-				BCBF3BC51C7DD935002708FD /* LXKLog.h */,
-				BCBF3BA21C7DD89A002708FD /* AppDelegate.h */,
-				BCBF3BA31C7DD89A002708FD /* AppDelegate.m */,
+				193F15F61C99832300D57044 /* AppDelegate.h */,
+				193F15F71C99832300D57044 /* AppDelegate.m */,
+				193F15F91C99833800D57044 /* LXKArcticleHeader.h */,
+				193F15FA1C99833800D57044 /* LXKLog.h */,
 				BCBF3BA81C7DD89A002708FD /* Main.storyboard */,
 				BCBF3BAB1C7DD89A002708FD /* Images.xcassets */,
-				BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */,
+				195908341C9FF9B30091579D /* LaunchScreen.xib */,
 			);
 			name = Applications;
 			sourceTree = "<group>";
@@ -401,9 +465,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195908351C9FF9B30091579D /* LaunchScreen.xib in Resources */,
 				191408231C8F015100673B4B /* icons.bundle in Resources */,
 				BCBF3BAA1C7DD89A002708FD /* Main.storyboard in Resources */,
-				BCBF3BAF1C7DD89A002708FD /* LaunchScreen.xib in Resources */,
 				BCBF3BAC1C7DD89A002708FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,25 +535,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				1914081E1C8F015100673B4B /* HARootScrollViewCell.m in Sources */,
-				19FF77AB1C8DD534008ACADD /* LXKRootViewController.m in Sources */,
 				1914081C1C8F015100673B4B /* HAItemManager.m in Sources */,
 				1914081A1C8F015100673B4B /* HAAnimationTool.m in Sources */,
+				1978DB401CA193F900904875 /* LXKVideoModel.m in Sources */,
 				1914081B1C8F015100673B4B /* HACursor.m in Sources */,
-				BCBF3BA41C7DD89A002708FD /* AppDelegate.m in Sources */,
 				191408211C8F015100673B4B /* HASortButton.m in Sources */,
 				191408241C8F015100673B4B /* UIColor+RGBA.m in Sources */,
+				193F15F21C9982DA00D57044 /* LXKWeiXinFrameModel.m in Sources */,
+				197D4FF71C9F98EC00AB459E /* UIColor+Util.m in Sources */,
 				BCABF58A1C807DDF00109F27 /* AFHTTPSessionManager+Util.m in Sources */,
-				19FF77A41C8DD529008ACADD /* LXKWeiXinFrameModel.m in Sources */,
+				195908391CA0255E0091579D /* LXKMainTabBarController.m in Sources */,
+				193F15FE1C99835800D57044 /* LXKColletedVC.m in Sources */,
 				191408251C8F015100673B4B /* UIView+Extension.m in Sources */,
-				19FF77A51C8DD529008ACADD /* LXKWeiXinModel.m in Sources */,
 				1914081F1C8F015100673B4B /* HARootScrollViewManager.m in Sources */,
 				1914081D1C8F015100673B4B /* HARootScrollView.m in Sources */,
-				19FF77AC1C8DD534008ACADD /* LXKWebViewController.m in Sources */,
-				19FF77B01C8DD53B008ACADD /* LXKRootTableViewCell.m in Sources */,
+				19E39C8C1CA22252008F8A13 /* LXKVideoTableViewCell.m in Sources */,
 				191408201C8F015100673B4B /* HAScrollNavBar.m in Sources */,
+				193F15F51C99830300D57044 /* LXKWeiXinModel.m in Sources */,
+				193F15EE1C9982C600D57044 /* LXKRootViewController.m in Sources */,
+				193F15EF1C9982C600D57044 /* LXKWebViewController.m in Sources */,
+				193F16041C9983B300D57044 /* LXKDbHelper.m in Sources */,
 				BC08F8741C81768300661C2E /* UIImageView+Util.m in Sources */,
+				19E39C8F1CA247B9008F8A13 /* LXKPlayViewController.m in Sources */,
 				191408221C8F015100673B4B /* HASortItemView.m in Sources */,
+				193F16011C99837100D57044 /* LXKRootTableViewCell.m in Sources */,
+				1978DB3D1CA1939300904875 /* LXKVideoViewController.m in Sources */,
 				BCBF3BA11C7DD89A002708FD /* main.m in Sources */,
+				193F15F81C99832300D57044 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,14 +590,6 @@
 				BCBF3BA91C7DD89A002708FD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BCBF3BAD1C7DD89A002708FD /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCBF3BAE1C7DD89A002708FD /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
